@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #FFA69E, #5DBBFF);
+    color: #333; /* Main text color */
+    padding-bottom: 50px; /* Add some padding to prevent content from touching the bottom */
+  }
+  
+  .scoreboard {
+    margin: 20px auto;  
+    width: 90%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .players {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .player-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .player-card input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .player-card p {
+    margin: 10px 0;
+  }
+  
+  #totalRuns,
+  #totalOvers {
+    color: #010702; /* Adjusting the text color for visibility */
+  }
+  
